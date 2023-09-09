@@ -1,0 +1,333 @@
+/* common shared styles */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn-primary {
+    border-radius: 5px;
+    background: #FD6E0A;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px 35px;
+}
+
+
+.section-title {
+    color: #181818;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.section-description {
+    color: #757575;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+
+/* navBar related styles */
+
+.letter-r {
+    color: #FD6E0A;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 200px;
+}
+
+.nav-title {
+    color: #181818;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+nav>ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 50px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #474747;
+}
+
+
+
+/* header related styles */
+
+.header {
+    background-color: #FFF8F3;
+    background-image: url('../images/header_bg.png'), url('../images/developer.png');
+    background-repeat: no-repeat;
+    background-position: bottom right, top left;
+}
+
+.banner {
+    padding: 30px 30px 0px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-content {
+    max-width: 500px;
+}
+
+.banner .profile-pic {
+    width: 500px;
+}
+
+.banner-greeting {
+    color: #474747;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.banner-title {
+    color: #181818;
+    font-size: 85px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#contact-btn {
+    background-color: #FFF8F3;
+    border: 1px solid #FD6E0A;
+    color: #FD6E0A;
+    margin-left: 30px;
+}
+
+.banner-description {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #757575;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+
+/* Main Section Styles */
+
+main {
+    max-width: 1140px;
+    margin: 0px auto;
+}
+
+main section {
+    margin-top: 130px;
+}
+
+
+
+/* About Section Styles */
+
+.about {
+    padding: 130px;
+    border-radius: 10px;
+    background-color: #FFF8F3;
+    margin: 130px 0;
+}
+
+.about-info-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-info {
+    margin-top: 30px;
+    color: #757575;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.about-title {
+    margin-bottom: 0;
+}
+
+.info {
+    color: #474747;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+
+
+
+/* what i do related styles  */
+
+#what-i-do-description {
+    padding: 0px 150px 30px;
+}
+
+.skills-container {
+    display: flex;
+    gap: 24px;
+}
+
+.skill {
+    padding: 30px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+
+.skill-title {
+    color: #181818;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.skill-description {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+/* Resume-section styles  */
+
+.resume-container {
+    margin-top: 100px;
+    display: flex;
+    gap: 50px;
+}
+
+
+.resume-container hr {
+    margin: 30px 0;
+}
+
+
+.resume-column-title {
+    color: #474747;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.resume-item-title {
+    color: #474747;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.resume-item-institute {
+    color: #757575;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.resume-item-description {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.download-cv {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+/* footer styles  */
+
+footer {
+    display: flex;
+    background-color: #FFF8F3;
+    gap: 100px;
+    padding: 130px 230px;
+    margin-top: 100px;
+}
+
+.footer-column {
+    width: 50%;
+}
+
+.social-links a {
+    margin-right: 25px;
+}
+
+
+.contact input[type="text"],
+.contact input[type="email"],
+textarea {
+    display: block;
+    margin-bottom: 20px;
+    padding: 18px 35px;
+    color: #757575;
+    border-radius: 5px;
+    background: #FFF;
+    border: 0;
+    width: 100%;
+
+}
+
+/* Responsive Styles */
+
+/* Small Screen Devices */
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+
+    .skills-container,
+    .resume-container,
+    footer {
+        flex-direction: column;
+    }
+
+    #what-i-do-description,
+    .resume-container {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .contact input[type="text"],
+    .contact input[type="email"],
+    textarea {
+        width: 80%;
+    }
+}
+
+/* Medium Screen Devices */
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    footer {
+        padding: 30px;
+    }
+}
