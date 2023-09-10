@@ -12,6 +12,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     padding: 15px 35px;
+    cursor: pointer;
 }
 
 
@@ -298,18 +299,43 @@ textarea {
 
 @media screen and (max-width: 576px) {
 
+    .header {
+        background-image: none;
+    }
+
+    nav, .banner,
+    nav > ul,
     .skills-container,
     .resume-container,
+    .about-info-container,
     footer {
         flex-direction: column;
     }
 
+    .banner > .profile-pic {
+        width: 100%;
+    }
+
+    nav > ul{
+        gap: 15px;
+    }
+
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+
+    #contact-btn{
+        margin-left: 0;
+    }
+
+    .banner,
     #what-i-do-description,
-    .resume-container {
+    .resume-container,
+    .about {
         padding: 20px;
     }
 
-    footer {
+     footer {
         padding: 10px;
     }
 
@@ -330,4 +356,5 @@ textarea {
     footer {
         padding: 30px;
     }
+    /* eyta korinai cause time chilo na */
 }
