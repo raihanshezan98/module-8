@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        h2 {
+            color: #333;
+            font-family: 'Inconsolata', monospace;
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+
+        .not-found-container {
+            display: flex;
+            margin-top: 100px;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 50px;
+        }
+
+        .photo {
+            width: 40%;
+        }
+
+        .photo img {
+            width: 100%;
+        }
+
+        .not-found-content {
+            width: 40%;
+            font-family: 'Space Mono', monospace;
+        }
+
+        .not-found-content>h1 {
+            color: #333;
+            font-size: 64px;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        .not-found-content>p {
+            color: #4F4F4F;
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 60px;
+            width: 65%;
+        }
+
+        button {
+            background-color: #333;
+            padding: 15px 30px;
+            color: #FFF;
+            font-size: 14px;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* For mobile devices  */
+        @media screen and (max-width: 576px) {
+            .not-found-container {
+                flex-direction: column;
+            }
+
+            .photo {
+                width: 100%;
+            }
+
+            .not-found-content{
+                width: 100%;
+            }
+
+            .not-found-content>p{
+                width: 85%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>404 Not Found</h2>
+
+    <div class="not-found-container">
+        <div class="photo">
+            <img src="Scarecrow.png" alt="Picture of a Scarecrow">
+        </div>
+        <div class="not-found-content">
+            <h1>I have bad news for you</h1>
+            <p>The page you are looking  for might be removed or is temporarily unavailable</p>
+            <button>BACK TO HOMEPAGE</button>
+        </div>
+    </div>
+</body>
+
+</html>
